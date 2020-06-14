@@ -49,6 +49,7 @@ namespace CtrlLauncher
         );
 
         public static readonly IntPtr HWND_TOPMOST = new IntPtr(-1);
+        public static readonly IntPtr HWND_TOP = new IntPtr(0);
         public const uint SWP_NOSIZE = 0x1;
         public const uint SWP_NOMOVE = 0x2;
         public const uint SWP_SHOWWINDOW = 0x40;

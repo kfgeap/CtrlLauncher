@@ -278,7 +278,7 @@ namespace CtrlLauncher
         public static bool SetForgroundWindow(IntPtr hWnd)
         {
             if (Win32.IsIconic(hWnd) != 0) Win32.ShowWindow(hWnd, Win32.SW_RESTORE);
-            if (Win32.SetWindowPos(hWnd, Win32.HWND_TOPMOST, 0, 0, 0, 0, Win32.SWP_NOMOVE | Win32.SWP_NOSIZE | Win32.SWP_SHOWWINDOW) == 0)
+            if (Win32.SetWindowPos(hWnd, Win32.HWND_TOP, 0, 0, 0, 0, Win32.SWP_NOMOVE | Win32.SWP_NOSIZE | Win32.SWP_SHOWWINDOW) == 0)
                 return false;
             return true;
         }
